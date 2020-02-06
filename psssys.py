@@ -8,5 +8,5 @@ app = Flask(__name__)
 def application():
     testvar = logic("test test")
     return testvar
-if __name__ == "__main__":
-    app.run()
+
+app.run()
