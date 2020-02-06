@@ -5,8 +5,10 @@ from flask import request
 app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
-def application():
-    testvar = logic("test test")
-    return testvar
 
-app.run()
+def application():
+    answer = logic("test test")
+    return answer
+
+if __name__ == "__main__":
+    app.run()
